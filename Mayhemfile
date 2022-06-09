@@ -1,6 +1,6 @@
-project: rnshah9/mayhem-hdiffpatch
+project: hdiffpatch
 target: hpatchz
 
 cmds:
-  - cmd: /repo/hpatchz "" @@ out
+  - cmd: /repo/hpatchz "" /test.diff /dev/null
     filepath: /test.diff
