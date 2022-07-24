@@ -2,4 +2,4 @@ project: hdiffpatch
 target: hpatchz
 
 cmds:
-  - cmd: /repo/hpatchz "" @@ out
+  - cmd: /hpatchz "" @@ out
