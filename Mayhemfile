@@ -1,0 +1,6 @@
+project: hdiffpatch
+target: hpatchz
+
+cmds:
+  - cmd: /repo/hpatchz "" /test.diff out
+    filepath: /test.diff
