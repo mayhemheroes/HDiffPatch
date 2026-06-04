@@ -5,7 +5,7 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get install -y build-essential libbz2-dev
 
 ADD . /repo
 WORKDIR /repo
-RUN make -j8 LZMA=0 ZSTD=0 MD5=0
+RUN make -j8 LZMA=0 ZSTD=0 MD5=0 XXH=0 LDEF=0 ZLIB=2
 
 RUN mkdir -p /deps
 RUN ldd /repo/hpatchz | tr -s '[:blank:]' '\n' | grep '^/' | xargs -I % sh -c 'cp % /deps;'
